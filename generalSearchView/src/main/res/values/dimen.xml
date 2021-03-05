@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="space_zero">0dp</dimen>
+    <dimen name="space_one_dp">1dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_medium">8dp</dimen>
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="space_xlarge">24dp</dimen>
+    <dimen name="space_XXlarge">32dp</dimen>
+
+
+    <dimen name="material_icon_height">40dp</dimen>
+
+    <dimen name="card_element_margin">16dp</dimen>
+    <dimen name="main_list_universal_padding">8dp</dimen>
+
+</resources>

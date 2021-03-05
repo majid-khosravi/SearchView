@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="no_id" type="id" />
+    <item name="navigation_home" type="id" />
+    <item name="navigation_seen" type="id" />
+    <item name="navigation_random" type="id" />
+    <item name="navigation_favorite" type="id" />
+    <item name="navigation_setting" type="id" />
+
+
+    <!-- SearchBar -->
+    <item name="input_search" type="id" />
+    <item name="txt_title" type="id" />
+    <item name="btn_search" type="id" />
+    <item name="btn_clear" type="id" />
+
+
+    <!-- Main Activity -->
+    <item name="search_bar" type="id" />
+    <item name="rv_main" type="id" />
+    <item name="text_error" type="id" />
+    <item name="progress_loading" type="id" />
+    <item name="frame_container" type="id" />
+    <item name="bottom_navigation" type="id" />
+    <item name="image_random" type="id" />
+    <item name="text" type="id" />
+    <item name="btn_finger" type="id" />
+
+
+    <!-- Detail Activity -->
+    <item name="toolbar" type="id" />
+    <item name="btn_back" type="id" />
+    <item name="btn_favorite" type="id" />
+    <item name="vintage" type="id" />
+    <item name="text_title" type="id" />
+    <item name="rv_content" type="id" />
+    <item name="text_interpretation" type="id" />
+    <item name="title_interpretation" type="id" />
+
+    <!--  Player  -->
+    <item name="button_prev" type="id"/>
+    <item name="button_play_pause" type="id"/>
+    <item name="button_next" type="id"/>
+
+    <item name="firstHemistich" type="id" />
+    <item name="secondHemistich" type="id" />
+    <item name="icon_seen" type="id" />
+    <item name="icon_favorite" type="id" />
+    <item name="text_number" type="id" />
+    <item name="image_view" type="id" />
+
+
+    <item name="text1" type="id" />
+    <item name="text2" type="id" />
+    <item name="spacerView" type="id" />
+
+
+    <item name="imageView" type="id" />
+    <item name="btn_color" type="id" />
+    <item name="textView" type="id" />
+    <item name="sb_fontSize" type="id" />
+    <item name="ic_font_size" type="id" />
+    <item name="ic_font_margin" type="id" />
+    <item name="sb_fontMargin" type="id" />
+    <item name="ic_font_space" type="id" />
+    <item name="rv_images" type="id" />
+    <item name="sb_fontSpace" type="id" />
+
+    <item name="share_couplet_menu" type="id"/>
+    <item name="share_couplet_item" type="id"/>
+    <item name="make_poster_item" type="id"/>
+    <item name="share_sonnet_item" type="id"/>
+
+
+</resources>

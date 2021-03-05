@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="md_font_title">@font/iran_sans</item>
+        <item name="md_font_button">@font/iran_sans</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="md_layout_direction">rtl</item>
+
+
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+
+    <style name="Widget.AppCompat.EditText.Input" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.General" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="AppCompatImageView"></style>
+
+    <style name="AppCompatImageView.General">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Player">
+
+    </style>
+
+    <style name="Player.Button" parent="AppCompatImageView.General">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Player.Button.Prv">
+        <item name="android:id">@id/button_prev</item>
+        <item name="android:src">@drawable/ic_prev_5s</item>
+    </style>
+
+    <style name="Player.Button.Next">
+        <item name="android:id">@id/button_next</item>
+        <item name="android:src">@drawable/ic_next_5s</item>
+        <item name="android:layout_marginLeft">@dimen/space_medium</item>
+    </style>
+
+    <style name="Player.Button.Play">
+        <item name="android:id">@id/button_play_pause</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:src">@drawable/ic_play</item>
+        <item name="android:layout_marginLeft">@dimen/space_medium</item>
+    </style>
+
+    <!--  Setting Option Rows  -->
+
+    <style name="SettingOptionRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+    <style name="SettingOptionRow.Title" parent="Widget.AppCompat.TextView.General">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="SettingOptionRow.Divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:background">#ccc</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+
+</resources>

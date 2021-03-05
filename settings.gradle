@@ -1,0 +1,3 @@
+include ':generalSearchView'
+include ':app'
+rootProject.name = "GeneralSearchView"
