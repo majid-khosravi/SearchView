@@ -1,6 +1,7 @@
-package ir.khosravi.searchview
+package ir.khosravi.general.searchview
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.text.TextUtils
 import android.util.AttributeSet
 import android.util.Log
@@ -9,14 +10,16 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import androidx.annotation.DrawableRes
 import androidx.annotation.IntDef
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
-import ir.khosravi.searchview.mylibrary.R
 import kotlinx.android.synthetic.main.view_searchview_rtl.view.*
 
 
-open class RtlSearchView @JvmOverloads constructor(
+
+class SearchView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
@@ -101,15 +104,21 @@ open class RtlSearchView @JvmOverloads constructor(
                 val drawableRes: Int =
                         if (TextUtils.isEmpty(query)) R.drawable.round_search_white_48 else 0
 
-                input_search.setCompoundDrawablesWithIntrinsicBounds(
-                        0, 0, drawableRes, 0
-                )
+                setInputDrawable(drawableRes)
 
                 if (::mTextChangedListener.isInitialized) mTextChangedListener.onTextChanged(query)
             } catch (error: Throwable) {
                 raiseError(error)
             }
         }
+    }
+
+    private fun setInputDrawable(@DrawableRes drawableRes: Int) {
+        val drawable : Drawable? = ContextCompat.getDrawable(context, drawableRes)
+        drawable?.setBounds(0, 0, 12, 12)
+        input_search.setCompoundDrawablesWithIntrinsicBounds(
+                null, null, drawable, null
+        )
     }
 
     private fun showKeyboard(v: View) {
@@ -142,9 +151,7 @@ open class RtlSearchView @JvmOverloads constructor(
                 input_search.visibility = View.VISIBLE
                 btn_search.visibility = View.GONE
                 txt_title.visibility = View.GONE
-                input_search.setCompoundDrawablesWithIntrinsicBounds(
-                    0, 0, R.drawable.round_search_white_48, 0
-                )
+                setInputDrawable(R.drawable.round_search_white_48)
             }
             SearchState.TYPING -> {
                 btn_clear.visibility = View.VISIBLE

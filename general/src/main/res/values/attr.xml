@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PersianPoemView">
+
+        <attr name="default_textSize" format="integer" />
+        <attr name="default_textSizeMin" format="integer" />
+        <attr name="default_textSizeMax" format="integer" />
+
+        <attr name="default_lineSpace" format="integer" />
+        <attr name="default_lineSpaceMin" format="integer" />
+        <attr name="default_lineSpaceMax" format="integer" />
+
+        <attr name="default_lineMargin" format="integer" />
+        <attr name="default_lineMarginMin" format="integer" />
+        <attr name="default_lineMarginMax" format="integer" />
+
+        <attr name="default_textColor" format="color" />
+
+    </declare-styleable>
+
+</resources>
